@@ -4,7 +4,7 @@
 	list-style:none;
 }
 body{
-	background: #cccccc;
+	background: #fffff1;
 }
 .banner {
 	width:640px;
@@ -51,7 +51,7 @@ body{
 }
 .innerwrapper {
 	float:left;
-	width:640pxpx;
+	width:640px;
 }
 .banner img {
 	width:640px;
@@ -59,7 +59,7 @@ body{
 }
 .QuestionHeader{
 	margin: 10px  auto;
-	width: 1200px;
+	width: 800px;
 	padding: 16px 0;
 	overflow: hidden;
 	background: #FFFFFF;
