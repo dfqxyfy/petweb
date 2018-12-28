@@ -90,20 +90,23 @@ window.onload = function(){
     }
 }
 
-var spandFlag=false;
+var spandFlag=true;
+
 function spand(){
+    spandFlag=!spandFlag;
     if(spandFlag){
         document.getElementById("computer").setAttribute("style","display:none");
     }else{
         document.getElementById("computer").setAttribute("style","");
     }
-    spandFlag=!spandFlag;
 }
 
 //项目二
 function initStatus(){
     var userName=getCookie("userName");
     window.defaultStatus=userName+" 登陆了";
+
+    autoPlay();
 }
 
 function getViewportSize(w){
@@ -129,5 +132,41 @@ function displayView() {
 
 function autoPlay(){
     var myAuto = document.getElementById('myaudio');
+
+    var duration = myAuto.duration;
+    duration=parseInt(duration);
+    document.getElementById("totalDur").innerText="/ "+duration;
+    //alert(duration);
     myAuto.play();
 }
+
+function ppp() {
+    console.log(playnum);
+    var myAuto = document.getElementById('myaudio');
+    var duration = myAuto.duration;
+    playnum+=1;
+    if(duration==0){
+        duration=1;
+    }
+    duration=parseInt(duration);
+    playnum=playnum%duration;
+    document.getElementById("playnum").value=playnum;
+}
+
+var playnum=0;
+var timer = setInterval(ppp, 1000);
+
+var playflag=true;
+function mmplay(){
+    playflag=!playflag;
+
+    var myAuto = document.getElementById('myaudio');
+    if(playflag){
+        timer=window.setInterval(ppp, 1000);
+        myAuto.play();
+    }else{
+        window.clearInterval(timer);
+        myAuto.pause();
+    }
+}
+

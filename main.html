@@ -11,11 +11,18 @@
 <body>
     <!--项目7-->
     <div id="topcenter">
-        <div><input type="button" value="获取视窗大小" onclick="displayView()"></div>
-        <a onclick="spand()" style="background-color: gold; color: #FF0000 ">萌宠计算器</a>
-        <div><!--style="display:none" -->
+        <div style="border: 2px dashed pink; margin-top:4px; margin-bottom:10px;" ><button style="border: none;border-radius: 10px; border:1px;outline: none; height:40px;width:90px;" onclick="displayView()">获取视窗大小</button></div>
+
+        <div style="border: 2px dashed pink; margin-top:4px; margin-bottom:10px;" >
+            <label>音乐播放进度：</label><input type="text" readonly value="" id="playnum" style="text-align: center;color:yellow;font-weight:bolder;font-size:16px;outline: none; height:30px;width:25px; background: rgba(0,0,0,.1); border: none;"/><a style="font-weight:bold" id="totalDur">/ 20</a>
+            <button style="height: 40px;width: 130px; border-radius: 10px;outline:none" onclick="mmplay()" >背景音乐开关</button>
+        </div>
+        <div>
+        <a onclick="spand()" style="background-color:#fff1f1; color: #8590A6 ">萌宠计算器</a>
+        </div>
+        <div style="border: 2px dashed pink; margin-top:4px; margin-bottom:10px;" >
             <div><input id="cptResult" width="164" readonly style=text-align:right;/></div>
-            <div id="computer" style="display:none">
+            <div id="computer" >
                 <div><input type="button" value="1"/><input type="button" value="2"/><input type="button" value="3"/><input type="button" value="+"/></div>
                 <div><input type="button" value="4"/><input type="button" value="5"/><input type="button" value="6"/><input type="button" value="-"/></div>
                 <div><input type="button" value="7"/><input type="button" value="8"/><input type="button" value="9"/><input type="button" value="*"/></div>
@@ -110,6 +117,6 @@
     <!-- 项目3：实现网页底部到顶部的跳转 -->
     <div  class="QuestionHeader" align="center"><a href="#myheader">跳转到页首</a></div>
 
-    <audio id="myaudio" src="video/loveyou.mp4" controls="controls" loop="false" hidden="true" >
+    <audio id="myaudio" src="music/jinglebells.mp3" controls="controls" loop="false" hidden="true" ></audio>
 </body>
 </html>

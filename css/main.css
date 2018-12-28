@@ -100,13 +100,13 @@ p{
 }
 #topcenter {
 	width: 13em;
-	height: 13em;
+	height: 18em;
 	background-color: #fff1f1;
 	position: fixed;
 	top: 10px;
 	left: 10px;
-	#right: 0px;
-	#bottom: 0px;
+	/*right: 0px;
+	#bottom: 0px;*/
 	margin: auto;
 }
 #computer .comp {
