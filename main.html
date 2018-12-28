@@ -8,6 +8,18 @@
      <script src="js/main.js"></script>
  </head>
 <body>
+    <div id="topcenter">
+        <a onclick="spand()" style="background-color: gold; color: #FF0000 ">萌宠计算器</a>
+        <div><!--style="display:none" -->
+            <div><input id="cptResult" width="144" readonly style=text-align:right;/></div>
+            <div id="computer" style="display:none">
+                <div><input type="button" value="1"/><input type="button" value="2"/><input type="button" value="3"/><input type="button" value="+"/></div>
+                <div><input type="button" value="4"/><input type="button" value="5"/><input type="button" value="6"/><input type="button" value="-"/></div>
+                <div><input type="button" value="7"/><input type="button" value="8"/><input type="button" value="9"/><input type="button" value="*"/></div>
+                <div><input type="button" value="0"/><input type="button" value="/"/><input type="button" value="clear"/><input type="button" value="="/></div>
+            </div>
+        </div>
+    </div>
     <div id="myheader" class="bannercont">
         <div class="banner">
                 <div class="inner">
@@ -20,9 +32,9 @@
         </div>
     </div>
     <div class="QuestionHeader">
-      <h3 class="QuestionHeader-title">你家中的萌宠都偷偷干了哪些让你震惊的事情？</h3>
+      <h3 class="QuestionHeader-title" onmousemove="big(this)" onmouseleave="recover(this)">你家萌宠偷偷干了哪些让你震惊的事情？</h3>
       <div class="QuestionHeader-cont txtp">
-          <p>我家的猫肯定不是第一次过夏，不过反正至少打我养它以来，夏天的行为也差不多……<span class="Button--plain" onclick="hideDiv(this)">阅读全文 »</span>
+          <p><a href="video/loveyou.mp4">我家的猫</a>不是第一次过夏，至少打我养它以来，夏天的行为也差不多...<span class="Button--plain" onclick="hideDiv(this)">阅读全文 »</span>
           </p>
         <div style="display:none"  class="txtp">
             <p>
@@ -38,7 +50,7 @@
     <div class="QuestionHeader">
         <h3 class="QuestionHeader-title">猫的哪些行为会让你觉得猫是爱你的？</h3>
         <div class="QuestionHeader-cont txtp">
-            <p>关窗户没注意夹到了他的爪子，嗷的惨叫一声回头张大嘴准备咬......<span class="Button--plain" onclick="hideDiv(this)">阅读全文 »</span>
+            <p>关窗户没注意夹到了他的爪子，嗷的惨叫一声回头张大嘴准备咬...<span class="Button--plain" onclick="hideDiv(this)">阅读全文 »</span>
             </p>
             <div style="display:none"  class="txtp">
                 <p>
@@ -56,11 +68,11 @@
     <div class="QuestionHeader">
         <h3 class="QuestionHeader-title">你爸妈有多宠爱你家宠物？</h3>
         <div class="QuestionHeader-cont txtp">
-            <p>超市买的速冻鸡腿，做了仨，认认真真等他们回来一家三口一人一个。期间馋的不行，忍着......<span class="Button--plain" onclick="hideDiv(this)">阅读全文 »</span>
+            <p>超市买的速冻鸡腿，做了仨，认认真真等他们回来一家三口一人一个...<span class="Button--plain" onclick="hideDiv(this)">阅读全文 »</span>
             </p>
             <div style="display:none"  class="txtp">
                 <p>
-                    回来之后跟我说，超市的饲料鸡，不吃，我说我没舍得吃呢，都凉了。然后我妈说那你热热吃吧，反正我们不吃，也不能给狗吃。
+                    期间馋的不行，忍着，回来之后跟我说，超市的饲料鸡，不吃，我说我没舍得吃呢，都凉了。然后我妈说那你热热吃吧，反正我们不吃，也不能给狗吃。
                 </p>
                 <p>
                     然后跟她的狗儿子说，咱要吃走地鸡对不对呀～我们才不吃饲料鸡呢～
@@ -73,6 +85,7 @@
             </div>
         </div>
     </div>
+    <!-- 项目3：实现网页底部到顶部的跳转 -->
     <div  class="QuestionHeader" align="center"><a href="#myheader">跳转到页首</a></div>
 </body>
 </html>

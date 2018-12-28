@@ -91,10 +91,28 @@ body{
 }
 p{
 	margin:5px auto;
-	text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
-	line-height:100%;
+	text-indent: 1em; /*em是相对单位，2em即现在一个字大小的两倍*/
+	line-height:140%;
 	letter-spacing: 2px;
 }
 .txtp{
 	padding: 1em 1em 2em 2em;
+}
+#topcenter {
+	width: 13em;
+	height: 13em;
+	background-color: #fff1f1;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	#right: 0px;
+	#bottom: 0px;
+	margin: auto;
+}
+#computer .comp {
+	width:72px;height:36px;align-content: center;
+}
+#computer div input{
+	width:3em;
+	align-content: center;
 }

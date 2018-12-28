@@ -3,17 +3,17 @@ body {
 }
 
 /*.div {*/
-    /*margin: 0 auto;*/
-    /*width: 400px;*/
-    /*height: 100px;*/
-    /*border: 1px solid #F00*/
+/*margin: 0 auto;*/
+/*width: 400px;*/
+/*height: 100px;*/
+/*border: 1px solid #F00*/
 /*}*/
 
 .input {
 
 }
 
-.div{
+.div {
     text-align: center; /*让div内部文字居中*/
     background-color: #fff;
     border-radius: 20px;
@@ -26,7 +26,8 @@ body {
     right: 0;
     bottom: 0;
 }
-.main{
+
+.main {
     text-align: center;
     background-color: #fff;
     border-radius: 20px;
@@ -35,5 +36,5 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
