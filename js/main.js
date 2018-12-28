@@ -126,3 +126,8 @@ function displayView() {
     var obj=getViewportSize(this.window);
     alert("宽度："+obj.w +"\r\n"+"高度："+obj.h)
 }
+
+function autoPlay(){
+    var myAuto = document.getElementById('myaudio');
+    myAuto.play();
+}
